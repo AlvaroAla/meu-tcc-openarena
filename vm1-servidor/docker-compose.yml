@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  openarena:
+    build: .
+    image: meu-openarena-server:local
+    command: /usr/games/openarena-server +set com_hunkMegs 512 +set com_zoneMegs 128 +set sv_maxclients 64 +set dedicated 1 +set net_port 27960 +exec server.cfg
+    ports:
+      - "27960:27960/udp"
+    volumes:
+      - ./configs:/root/.openarena/baseoa
+    restart: always
