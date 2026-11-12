@@ -28,6 +28,7 @@ meu-tcc-openarena/
 │       └── server.cfg           # Configurações in-game (Tickrate, Mapa, I.A.)
 ├── vm2-telemetria/
 │   ├── prometheus.yml           # Arquivo de configuração de alvos de coleta (1s)
+│   ├── docker-compose.yml       # Arquivo docker
 │   └── grafana/
 │       └── dashboard.json       # Layout do painel com as queries PromQL tratadas
 ├── vm3-injetora/
